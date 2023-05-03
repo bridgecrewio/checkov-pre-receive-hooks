@@ -1,0 +1,1 @@
+# Checkov pre-receive hooks
