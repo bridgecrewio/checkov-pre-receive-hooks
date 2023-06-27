@@ -41,5 +41,5 @@ docker cp data:/home/git/.ssh/id_ed25519 .
 
 ```sh
 git remote add test git@127.0.0.1:test.git
-$ GIT_SSH_COMMAND="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p 52311 -i ../id_ed25519" git push -u test main
+GIT_SSH_COMMAND="ssh -o UserKnownHostsFile=/dev/null -o StrictHostKeyChecking=no -p 52311 -i ../id_ed25519" git push -u test main
 ```
