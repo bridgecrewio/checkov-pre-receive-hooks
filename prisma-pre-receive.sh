@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# This script is used to run Prisma Cloud Code Security using Checkov checkov in a pre-receive hook
+# This script is used to run Prisma Cloud Code Security using Checkov CLI in a pre-receive hook.
 
 # Use the prisma api url and key pair for your tenant
 PRISMA_API_URL='https://api.prismacloud.io'
@@ -9,8 +9,6 @@ BC_API_KEY='<access_key_id>::<secret_access_key>'
 # Current repository name may be available as an environment variable depending on the SCM. 
 # Check documentation for your specific provider. 
 REPO_ID='org/repo'
-
-export LOG_LEVEL=DEBUG
 
 CHECKOV_COMMAND='checkov -d'
 
