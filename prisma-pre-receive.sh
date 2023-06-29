@@ -12,8 +12,10 @@ REPO_ID='org/repo'
 
 CHECKOV_COMMAND='checkov -d'
 
-# flags
+# required flags
 CHECKOV_FLAGS="--skip-results-upload --repo-id ${REPO_ID} --prisma-api-url ${PRISMA_API_URL} --bc-api-key ${BC_API_KEY}" 
+
+# add other, optional flags https://www.checkov.io/2.Basics/CLI%20Command%20Reference.html
 CHECKOV_OPTIONAL_FLAGS='--framework secrets terraform sca_package  --enable-secret-scan-all-files --compact'
 
 TEMPDIR=`mktemp -d`
